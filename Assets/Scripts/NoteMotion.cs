@@ -14,10 +14,10 @@ public class NoteMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z < 50)
+       /* if (transform.position.z < 50)
         {
             Explode2();
-        }
+        }*/
     }
 
     void Explode()
@@ -32,5 +32,23 @@ public class NoteMotion : MonoBehaviour
         ParticleSystem exp = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
         Destroy(exp, exp.main.duration);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "ball")
+        {
+            Debug.Log("An object entered.");
+            Explode2();
+        } else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        print("collision");
+        Explode2();
     }
 }

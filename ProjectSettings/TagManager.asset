@@ -6,6 +6,7 @@ TagManager:
   tags:
   - note
   - button
+  - ball
   layers:
   - Default
   - TransparentFX
