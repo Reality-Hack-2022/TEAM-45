@@ -5,4 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: f9b5e90682bcc2a4dbcab336040b1d9a, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0eb3796eb6cf32040a783768387b12c4, type: 2}
