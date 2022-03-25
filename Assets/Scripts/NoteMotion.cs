@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NoteMotion : MonoBehaviour
 {
+    public ParticleSystem explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +14,23 @@ public class NoteMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z < -10)
+        if (transform.position.z < 50)
         {
-            Destroy(gameObject);
+            Explode2();
         }
+    }
+
+    void Explode()
+    {
+        ParticleSystem exp = GetComponent<ParticleSystem>();
+        exp.Play();
+        Destroy(gameObject, exp.main.duration);
+    }
+
+    public void Explode2()
+    {
+        ParticleSystem exp = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
+        Destroy(exp, exp.main.duration);
     }
 }
