@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private string currNote = "do";
     public string selectedNote = "";
     public GameObject NotesContainer;
+    public GameObject Mallet;
     private int numOfTries = 2;
     private int currTry = 0;
 
@@ -58,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     private void Reset()
     {
+        Mallet.GetComponent<Collider>().enabled = true;
         foreach(Transform t in NotesContainer.transform)
         {
             t.GetComponent<Renderer>().enabled = true;

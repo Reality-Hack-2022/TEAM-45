@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_31;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_LUMIN;UNITY_LUMIN;DEBUGGER_LISTENS_FIXED_PORT;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EGL;ENABLE_NETWORK;ENABLE_SHADOWS;ENABLE_SPATIALTRACKING;ENABLE_TEXTUREID_MAP;ENABLE_XR;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;MAGICLEAP;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_31;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;MAGICLEAP;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -49,138 +49,143 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>Lumin:39</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppControllerVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\VirtualPointer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ContactsExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageCaptureExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\PCFExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\MagicLeap\WebRTC\Scripts\MLWebRTCExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\HandVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIScrollView.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageTrackerExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\RawVideoCaptureVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\PathAroundObject.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\PlanesExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PersistentBall.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactAttributeItemVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerButton.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VirtualKeyboard.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactItemVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VirtualCursor.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatsText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSpaceExplorerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\DestroyAfterTime.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisual.cs" />
+    <Compile Include="Assets\Ring.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\RawVideoCapturePreviewExample.cs" />
+    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIButtonGroup.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIToggleButton.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\LocationExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\FaceCamera.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MLRaycastVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsButtonVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ImageTrackerVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIButton.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\HandMeshingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsTextFieldVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\ArucoTracker\Scripts\MLArucoTrackerVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VideoError.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsListPageVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\VideoCaptureVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PlaceFromCamera.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusIndicator.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MeshingExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MeshingVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerToggle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\RaycastExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\MediaPlayer\Scripts\MediaPlayerExampleCycler.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSeaExplorerLauncher.cs" />
+    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UISceneSelectionButton.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\Ruler.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UserInterface.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\ControlExample.cs" />
-    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectVisual.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\RawVideoCaptureVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppControllerVisualizer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\VideoCaptureExample.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerSlider.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PrivilegeDeniedError.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\WacomTabletVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\KeyPoseVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\ArucoTracker\Scripts\MLArucoTrackerExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusText.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\SpriteSequenceAnimation.cs" />
-    <Compile Include="Assets\MagicLeap\WebRTC\Scripts\MLWebRTCExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\PathAroundObject.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerButton.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusIndicator.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UISceneSelectionButton.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\FaceCamera.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VirtualKeyboard.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\LightTrackingExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\MeshingExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\VirtualPointer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\VideoCaptureExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\Ruler.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\ContactsExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\PlanesExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MLRaycastVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\TransformFollower.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsButtonVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\AudioCaptureExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsTextFieldVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerSlider.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\RawVideoCapturePreviewExample.cs" />
-    <Compile Include="Assets\MagicLeap\MRCamera\Scripts\MLMRCameraVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PrivilegeDeniedError.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\MusicService\Scripts\MusicServiceExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\WacomTabletVisualizer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ControllerVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PlanesVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\HandVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MeshingVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\MusicService\Scripts\MusicServiceVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactItemVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletFeedbackExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\MediaPlayer\Scripts\MediaPlayerExample.cs" />
-    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerTransform.cs" />
-    <Compile Include="Assets\MagicLeap\ArucoTracker\Scripts\MLArucoTrackerVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VirtualCursor.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerToggle.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VideoError.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatus.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatsText.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSpaceExplorerController.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIButtonGroup.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactPageVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PersistentBall.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\RaycastExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIInputVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\VirtualKeyboardExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Streaming\MediaPlayer\Scripts\MediaPlayerExampleCycler.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageCaptureExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\KeyPoseVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ImageTrackerVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\PCFExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIToggleButton.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIButton.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactAttributeItemVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsListPageVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\LocationExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ContentTap.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ContentDragHandler.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayer51SurroundEnabler.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\VideoCaptureVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIScrollView.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\HandMeshingExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsVisualizer.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\HandTrackingExample.cs" />
-    <Compile Include="Assets\MagicLeap\ArucoTracker\Scripts\MLArucoTrackerExample.cs" />
-    <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\DestroyAfterTime.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\FaceTargetPosition.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UserInterface.cs" />
+    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectVisual.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppExample.cs" />
+    <Compile Include="Assets\MagicLeap\MRCamera\Scripts\MLMRCameraVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PlanesVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerTransform.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactPageVisualizer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ContentDragHandler.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\TransformFollower.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\MusicService\Scripts\MusicServiceVisualizer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ContentTap.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\LightTrackingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\MusicService\Scripts\MusicServiceExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletFeedbackExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIInputVisualizer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ContentDragController.cs" />
     <Compile Include="Assets\MagicLeap\MRCamera\Scripts\MLMRCameraExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisual.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageTrackerExample.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSeaExplorerLauncher.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSpaceExplorerLauncher.cs" />
-    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PlaceFromCamera.cs" />
-    <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsVisualizer.cs" />
-    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\AudioCaptureExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Streaming\MediaPlayer\Scripts\MediaPlayerExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatus.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayer51SurroundEnabler.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\HandTrackingExample.cs" />
     <Compile Include="Assets\Shot.cs" />
-    <Compile Include="Assets\Ring.cs" />
+    <Compile Include="Assets\Scripts\NoteMotion.cs" />
+    <Compile Include="Assets\Scripts\CreateNote.cs" />
+    <Compile Include="Assets\Scripts\ScaleGlow.cs" />
+    <Compile Include="Assets\Mallet.cs" />
+    <Compile Include="Assets\ButtonNote.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MagicLeap\Examples\Streaming\MusicService\Plugins\Lumin\music_manifest.xml" />
@@ -270,6 +275,12 @@
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
@@ -311,9 +322,6 @@
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.LuminModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\PlaybackEngines\LuminSupport\Managed\UnityEngine.LuminModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
@@ -425,6 +433,9 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
@@ -974,6 +985,10 @@
       <Project>{20D74B44-0F0E-EFDB-A581-F422A167FB7A}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
     </ProjectReference>
+    <ProjectReference Include="MagicLeapTools.Voice.csproj">
+      <Project>{0776BAF5-CD3C-732B-1DD7-472A7AA02BF4}</Project>
+      <Name>MagicLeapTools.Voice</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Examples.csproj">
       <Project>{9944CB87-609C-379A-374B-41A0EBB318F6}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
@@ -994,6 +1009,10 @@
       <Project>{3EA7E685-B9E7-E1E7-30E9-5D1E6DAFE99E}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.CameraSystem</Name>
     </ProjectReference>
+    <ProjectReference Include="MagicLeap.MRTK.csproj">
+      <Project>{FA344DBF-27CD-A73E-3EEF-043F7B986B8C}</Project>
+      <Name>MagicLeap.MRTK</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.csproj">
       <Project>{E692C70C-2E33-052E-B4CD-33EB7D6D8139}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor</Name>
@@ -1013,6 +1032,10 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.csproj">
       <Project>{27A21720-6E29-9B7A-12FE-80796033018A}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy</Name>
+    </ProjectReference>
+    <ProjectReference Include="MagicLeap.MRTK.Editor.csproj">
+      <Project>{E52BE53E-DFD6-4EF1-C289-BEAC81A7C22F}</Project>
+      <Name>MagicLeap.MRTK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.csproj">
       <Project>{39E236A8-DAC9-BD50-B2B2-C92AFE84FC34}</Project>
@@ -1085,18 +1108,6 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.StandardAssets.Editor.csproj">
       <Project>{DB72963E-CD29-7D46-45AA-72E7C590599B}</Project>
       <Name>Microsoft.MixedReality.Toolkit.StandardAssets.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeap.MRTK.csproj">
-      <Project>{FA344DBF-27CD-A73E-3EEF-043F7B986B8C}</Project>
-      <Name>MagicLeap.MRTK</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeap.MRTK.Editor.csproj">
-      <Project>{E52BE53E-DFD6-4EF1-C289-BEAC81A7C22F}</Project>
-      <Name>MagicLeap.MRTK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeapTools.Voice.csproj">
-      <Project>{0776BAF5-CD3C-732B-1DD7-472A7AA02BF4}</Project>
-      <Name>MagicLeapTools.Voice</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
