@@ -187,6 +187,9 @@
     <Compile Include="Assets\Mallet.cs" />
     <Compile Include="Assets\ButtonNote.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
+    <Compile Include="Assets\Audio\Note Hits\NoteImpactSound.cs" />
+    <Compile Include="Assets\noteTrigger.cs" />
+    <Compile Include="Assets\notesoundtrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MagicLeap\Examples\Streaming\MusicService\Plugins\Lumin\music_manifest.xml" />
