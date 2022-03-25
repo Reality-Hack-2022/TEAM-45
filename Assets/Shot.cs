@@ -20,12 +20,14 @@ public class Shot : MonoBehaviour
     {
         if (isMoving)
         {
+            GetComponent<Renderer>().enabled = true;
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * speed);
         }
     }
 
-    void LaunchBall()
+    public void LaunchBall()
     {
+        GetComponent<Renderer>().enabled = true;
         isMoving = true;
     }
 
@@ -35,6 +37,7 @@ public class Shot : MonoBehaviour
         {
             isMoving = false;
             transform.position = startPos;
+            GetComponent<Renderer>().enabled = false;
             Debug.Log("wow");
             gm.Hit();
         }
