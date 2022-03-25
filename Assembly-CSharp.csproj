@@ -179,6 +179,8 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PlaceFromCamera.cs" />
     <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsVisualizer.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Shot.cs" />
+    <Compile Include="Assets\Ring.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MagicLeap\Examples\Streaming\MusicService\Plugins\Lumin\music_manifest.xml" />

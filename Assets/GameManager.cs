@@ -6,13 +6,17 @@ public class GameManager : MonoBehaviour
 {
     public int score = 0;
     private string[] notes = {"do", "re", "mi", "fa", "so", "la", "ti"};
-    private string currNote = "";
+    private string currNote = "do";
+    public string selectedNote = "";
+    public GameObject NotesContainer;
+    private int numOfTries = 2;
+    private int currTry = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        LaunchBall();
+        LaunchTarget();
     }
 
     // Update is called once per frame
@@ -24,8 +28,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void LaunchBall()
+    public void LaunchTarget()
     {
+        currTry = 0;
         currNote = notes[(int) Random.Range(0, notes.Length)];
         Debug.Log(currNote);
         //pick random note
@@ -33,6 +38,29 @@ public class GameManager : MonoBehaviour
 
     public void Hit()
     {
-        score++;
+        currTry++;
+        if(selectedNote == currNote)
+        {
+            score++;
+        }
+        else
+        {
+            Debug.Log("wrong note");
+        }
+
+        if(currTry == numOfTries)
+        {
+            LaunchTarget();
+        }
+
+        Reset();
+    }
+
+    private void Reset()
+    {
+        foreach(Transform t in NotesContainer.transform)
+        {
+            t.GetComponent<Renderer>().enabled = true;
+        }
     }
 }
