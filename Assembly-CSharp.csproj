@@ -86,7 +86,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\DestroyAfterTime.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisual.cs" />
-    <Compile Include="Assets\Ring.cs" />
+    <Compile Include="Assets\Scripts\Ring.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\RawVideoCapturePreviewExample.cs" />
@@ -180,16 +180,16 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayer51SurroundEnabler.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\HandTrackingExample.cs" />
-    <Compile Include="Assets\Shot.cs" />
+    <Compile Include="Assets\Scripts\Shot.cs" />
     <Compile Include="Assets\Scripts\NoteMotion.cs" />
     <Compile Include="Assets\Scripts\CreateNote.cs" />
     <Compile Include="Assets\Scripts\ScaleGlow.cs" />
-    <Compile Include="Assets\Mallet.cs" />
-    <Compile Include="Assets\ButtonNote.cs" />
+    <Compile Include="Assets\Scripts\Mallet.cs" />
+    <Compile Include="Assets\Scripts\ButtonNote.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Audio\Note Hits\NoteImpactSound.cs" />
-    <Compile Include="Assets\noteTrigger.cs" />
-    <Compile Include="Assets\notesoundtrigger.cs" />
+    <Compile Include="Assets\Scripts\noteTrigger.cs" />
+    <Compile Include="Assets\Scripts\notesoundtrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MagicLeap\Examples\Streaming\MusicService\Plugins\Lumin\music_manifest.xml" />
