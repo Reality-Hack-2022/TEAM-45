@@ -134,7 +134,7 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\ControlExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\VideoCaptureExample.cs" />
-    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerSlider.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PrivilegeDeniedError.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\WacomTabletVisualizer.cs" />
