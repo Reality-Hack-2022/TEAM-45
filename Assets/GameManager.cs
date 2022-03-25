@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public int score = 0;
     private string[] notes = {"do", "re", "mi", "fa", "so", "la", "ti"};
-    private string currNote = "";
+    private string currNote = "do";
+    private string selectedNote = "";
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,14 @@ public class GameManager : MonoBehaviour
 
     public void Hit()
     {
-        score++;
+        if(selectedNote == currNote)
+        {
+            score++;
+        }
+        else
+        {
+            Debug.Log("wrong note");
+        }
+        
     }
 }
