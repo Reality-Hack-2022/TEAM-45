@@ -46,19 +46,6 @@ public class Shot : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "target")
-        {
-            isMoving = false;
-            transform.position = startPos;
-            GetComponent<Renderer>().enabled = false;
-            Debug.Log("wow");
-            //gm.Hit();
-        }
-        
-    }
-
     public void Hide()
     {
         isMoving = false;
