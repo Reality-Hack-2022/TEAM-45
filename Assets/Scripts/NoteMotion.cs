@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteMotion : MonoBehaviour
+public class Target : MonoBehaviour
 {
     public ParticleSystem explosion;
     public GameManager gm;
@@ -36,23 +36,17 @@ public class NoteMotion : MonoBehaviour
         Destroy(exp, exp.main.duration);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "shot")
-        {           
-            if (gm.Hit())
-            {
+    private void OnTriggerEnter(Collider other) {
+        if (other.name == "shot") {           
+            if (gm.Hit()) {
                 Explode2();                
             }
             other.GetComponent<Shot>().Hide();
-        } 
-        else if(other.name == "PersonBounds")
-        {
+        } else if (other.name == "PersonBounds") {
             Debug.Log("huh");
             Destroy(gameObject);
             gm.OnBodyCollision();
         }
-        //
     }
 
     void OnCollisionEnter(Collision collision)

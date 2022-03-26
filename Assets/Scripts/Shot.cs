@@ -11,7 +11,7 @@ public class Shot : MonoBehaviour
     public GameObject spawnNoteObject;
     private Vector3 startPos;
 
-    private Vector3 force = new Vector3(0, 0.2f, 1f) * speed;
+    private Vector3 force = new Vector3(0, 0.25f, 1.2f) * speed;
     private Rigidbody rb;
     private Vector3 scale = new Vector3(1f, 1f, 1f) * 14f;
     float duration = 0.16f;
@@ -33,8 +33,9 @@ public class Shot : MonoBehaviour
 
     private void Enlarge()
     {
-        var scaleTo = scale * 5f;
-        StartCoroutine(ScaleOverSeconds(gameObject, scaleTo, 1.0f));
+        transform.localScale = scale;
+        var scaleTo = scale * 15f;
+        StartCoroutine(ScaleOverSeconds(gameObject, scaleTo, 0.5f));
     }
 
     public IEnumerator ScaleOverSeconds(GameObject objectToScale, Vector3 scaleTo, float seconds)
@@ -48,6 +49,8 @@ public class Shot : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         objectToScale.transform.localScale = scaleTo;
+        isMoving = true;
+        rb.velocity = force;
     }
 
     public void LaunchBall()
@@ -55,12 +58,9 @@ public class Shot : MonoBehaviour
         print("launch ball");
         if (spawnNoteObject.transform.childCount > 0)
         {
-            isMoving = true;
             GetComponent<Renderer>().enabled = true;
-            rb.velocity = new Vector3(0f, 0f, 0f);
-            transform.localScale = scale;
+            rb.velocity = new Vector3(0f, 0f, 0f);            
             Enlarge();
-            rb.AddForce(force, ForceMode.Acceleration);
         }
     }
 
