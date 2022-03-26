@@ -672,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287424215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.237, z: 1.167}
+  m_LocalPosition: {x: 0, y: -0.321, z: 1.167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 361425200}
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6435bd845528504693a0d94ca79bf17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFab: {fileID: 0}
+  targetFab: {fileID: 1129085764070728144, guid: 453f041aabba1a640a40c5cc1f39dcf0, type: 3}
 --- !u!1 &485984871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,6 +3981,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 2bfe9bc37124a4239a48c8358af41827, type: 2}
 --- !u!33 &1721244925469995850
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4088,6 +4089,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 1cda680ebfc8144fdac1066cc8b23386, type: 2}
 --- !u!4 &2307730841180019638
 Transform:
   m_ObjectHideFlags: 0
@@ -4266,6 +4268,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 564a2cfa6fa704862bdfd957989f23ae, type: 2}
 --- !u!23 &3386732084995163970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4373,6 +4376,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: aa520cf254b7d47849f258ef365b6e02, type: 2}
 --- !u!23 &3971389537866658357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4723,6 +4727,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 2accee7b77b54482aaf8fa10971b9d06, type: 2}
 --- !u!1 &6917409845727251596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,6 +5055,7 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: e85d2fd964251f04783217e2b58586da, type: 2}
 --- !u!23 &7850566589290352706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5194,3 +5200,4 @@ MonoBehaviour:
   speed: 3
   isMoving: 0
   shot: {fileID: 0}
+  glowMaterial: {fileID: 2100000, guid: 01d1d8de9fb224ab697b9a36354eb760, type: 2}
