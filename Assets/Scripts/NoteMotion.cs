@@ -38,10 +38,13 @@ public class NoteMotion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "ball")
-        {
-            Debug.Log("An object entered.");
-            Explode2();
+        if (other.name == "shot")
+        {           
+            if (gm.Hit())
+            {
+                Explode2();                
+            }
+            other.GetComponent<Shot>().Hide();
         } 
         else if(other.name == "PersonBounds")
         {
