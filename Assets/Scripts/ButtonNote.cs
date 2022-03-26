@@ -9,6 +9,7 @@ public class ButtonNote : MonoBehaviour
     public bool isMoving = true;
     private Vector3 startPos;
     public GameObject shot;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +32,12 @@ public class ButtonNote : MonoBehaviour
     {
         if(other.name == "Mallet")
         {
+
             isMoving = true;
             other.gameObject.GetComponent<Collider>().enabled = false;
             shot.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
+            
+            FindObjectOfType<Audiomanager>().Play("Note_" + name);
         }
     }
 

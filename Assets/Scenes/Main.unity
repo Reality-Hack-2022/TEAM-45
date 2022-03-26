@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571343, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3435,6 +3435,41 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Target_ti
     clip: {fileID: 8300000, guid: 88414cf41c95a43aa827ce58e7adb09d, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_do
+    clip: {fileID: 8300000, guid: 3518e313f37a54717947624e09cd5b3e, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_re
+    clip: {fileID: 8300000, guid: 0955e2999b49246b8b74a12d2f45ae11, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_mi
+    clip: {fileID: 8300000, guid: 3f34ac7c4bf80432aa6ef472e9badb46, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_fa
+    clip: {fileID: 8300000, guid: 42169f3567fd840f685a6c0284e84165, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_sol
+    clip: {fileID: 8300000, guid: 6e23bbe39f8e24827ab960c8480c937a, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_la
+    clip: {fileID: 8300000, guid: 49cbe91de98224a91a2682a79a66c0d1, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Note_ti
+    clip: {fileID: 8300000, guid: f5f640d64df9547959d1dc999fdc45bd, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
