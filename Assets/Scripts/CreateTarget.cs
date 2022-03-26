@@ -6,10 +6,14 @@ public class CreateTarget : MonoBehaviour
 {    
     public Rigidbody fab;
 
-    public void FireTarget()
+    public void FireTarget(string noteName)
     {
         Rigidbody newBody = Instantiate(fab, new Vector3(0f, 25f, 120f), Quaternion.identity);
         newBody.transform.parent = gameObject.transform;
         newBody.velocity = new Vector3(0f, -0.2f, -1f) * 20f;
+    }
+    
+    public void PlaySound(string noteName) {
+        FindComponent<AudioManager>().Play("Target_" + noteName);
     }
 }

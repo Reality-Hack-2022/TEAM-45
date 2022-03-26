@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public string selectedNote = "";
     public GameObject NotesContainer;
     public GameObject Mallet;
-    public CreateTarget createTargetScript;
+    public Rigidbody targetFab;
 
     private int numOfTries = 2;
     private int currTry = 0;
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         currTry = 0;
         currNote = notes[(int) Random.Range(0, notes.Length)];
         Debug.Log(currNote);
-        createTargetScript.FireTarget();
+        FireTarget(currNote);
         //pick random note
     }
 
@@ -88,5 +88,12 @@ public class GameManager : MonoBehaviour
         {
             t.GetComponent<Renderer>().enabled = true;
         }
+    }
+
+    private void FireTarget()
+    {
+        Rigidbody newBody = Instantiate(targetFab, new Vector3(0f, 25f, 120f), Quaternion.identity);
+        newBody.transform.parent = gameObject.transform;
+        newBody.velocity = new Vector3(0f, -0.2f, -1f) * 20f;
     }
 }

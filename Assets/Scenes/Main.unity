@@ -915,7 +915,7 @@ MonoBehaviour:
   selectedNote: 
   NotesContainer: {fileID: 287424215}
   Mallet: {fileID: 7036943379226789280}
-  createNoteScript: {fileID: 450019405}
+  targetFab: {fileID: 0}
 --- !u!4 &339044868
 Transform:
   m_ObjectHideFlags: 0
@@ -2038,7 +2038,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 339044867}
   target: {fileID: 1818320694}
-  speed: 1
   isMoving: 0
   spawnNoteObject: {fileID: 450019403}
 --- !u!1 &974286316
@@ -3374,6 +3373,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925266351}
   m_CullTransparentMesh: 1
+--- !u!1 &1977748081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977748083}
+  - component: {fileID: 1977748082}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1977748082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977748081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e898ad872fe7a41b8a66b4efefd97142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Target_do
+    clip: {fileID: 8300000, guid: bd5fd402536d24521bbb9cbaf1e037a6, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Target_re
+    clip: {fileID: 8300000, guid: 94c2630eb8a2747eeac3c2fb312302b5, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+  - name: Target_mi
+    clip: {fileID: 8300000, guid: 01e356d5f403e4713970dcaf9f97a027, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+--- !u!4 &1977748083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977748081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067510840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,6 +3925,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!33 &1721244925469995850
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3973,6 +4032,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!4 &2307730841180019638
 Transform:
   m_ObjectHideFlags: 0
@@ -4150,6 +4210,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!23 &3386732084995163970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4256,6 +4317,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!23 &3971389537866658357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4605,6 +4667,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!1 &6917409845727251596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4931,6 +4994,7 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
 --- !u!23 &7850566589290352706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5074,3 +5138,4 @@ MonoBehaviour:
   target: {fileID: 1548470708}
   speed: 3
   isMoving: 0
+  shot: {fileID: 0}
