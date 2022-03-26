@@ -10,22 +10,31 @@ public class GameManager : MonoBehaviour
     public string selectedNote = "";
     public GameObject NotesContainer;
     public GameObject Mallet;
+    public CreateNote createNoteScript;
+
     private int numOfTries = 2;
     private int currTry = 0;
+
+    
+    private float period = 7f;
+    private float nextActionTime = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        LaunchTarget();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.time > nextActionTime)
+        {
 
-        //launch note
-        //wait for it to get hit
+            nextActionTime = Time.time + period;
+            Debug.Log("time " + Time.time);
+            LaunchTarget();
+        }
 
     }
 
@@ -34,6 +43,7 @@ public class GameManager : MonoBehaviour
         currTry = 0;
         currNote = notes[(int) Random.Range(0, notes.Length)];
         Debug.Log(currNote);
+        createNoteScript.FireTarget();
         //pick random note
     }
 
@@ -49,10 +59,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("wrong note");
         }
 
-        if(currTry == numOfTries)
+        /*if(currTry == numOfTries)
         {
             LaunchTarget();
-        }
+        }*/
 
         Reset();
     }

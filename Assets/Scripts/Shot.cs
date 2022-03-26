@@ -8,6 +8,7 @@ public class Shot : MonoBehaviour
     public GameObject target;
     public float speed = 1;
     public bool isMoving = true;
+    public GameObject spawnNoteObject;
     private Vector3 startPos;
     // Start is called before the first frame update
     void Start()
@@ -20,20 +21,32 @@ public class Shot : MonoBehaviour
     {
         if (isMoving)
         {
-            GetComponent<Renderer>().enabled = true;
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * speed);
+            if(target != null)
+            {
+                GetComponent<Renderer>().enabled = true;
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * speed);
+            }
+            else
+            {
+                Debug.Log("nnull");
+            }
+            
         }
     }
 
     public void LaunchBall()
     {
+        if (spawnNoteObject.transform.childCount > 0)
+        {
+            target = spawnNoteObject.transform.GetChild(0).gameObject;
+        }
         GetComponent<Renderer>().enabled = true;
         isMoving = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "note")
+        if(other.tag == "target")
         {
             isMoving = false;
             transform.position = startPos;
