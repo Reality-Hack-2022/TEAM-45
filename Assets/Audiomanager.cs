@@ -16,7 +16,7 @@ public class Audiomanager : MonoBehaviour {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume; 
-            
+            s.source.loop = s.loop;
 
         }
     }
@@ -29,6 +29,11 @@ public class Audiomanager : MonoBehaviour {
             s.source.Play();
             print("playing: " + s);
         }
+
+    }
+    void Start ()
+    {
+        Play("Theme");
 
     }
 }
