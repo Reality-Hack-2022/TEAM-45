@@ -47,12 +47,14 @@ public class GameManager : MonoBehaviour
         //pick random note
     }
 
-    public void Hit()
+    public bool Hit()
     {
         currTry++;
+        bool res = false;
         if(selectedNote == currNote)
         {
             score++;
+            res = true;
         }
         else
         {
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
         }*/
 
         Reset();
+        return res;
     }
 
     public void OnBodyCollision()
