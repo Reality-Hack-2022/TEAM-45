@@ -10,7 +10,7 @@ public class CreateTarget : MonoBehaviour
     {
         Rigidbody newBody = Instantiate(targetFab, new Vector3(0f, 25f, 120f), Quaternion.identity);
         newBody.transform.parent = gameObject.transform;
-        newBody.velocity = new Vector3(0f, -0.25f, -1.2f) * 20f;
+        newBody.velocity = new Vector3(0f, -0.25f, -1.2f) * 10f;
 
         FindObjectOfType<Audiomanager>().Play("Target_" + noteName);
     }
