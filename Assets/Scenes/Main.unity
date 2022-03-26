@@ -1314,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
+    - target: {fileID: 1593403575765298, guid: ffbe4bef620a0a542bb77fe2f765c905, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803133263607164, guid: ffbe4bef620a0a542bb77fe2f765c905, type: 3}
       propertyPath: m_IsActive
       value: 0
