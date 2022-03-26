@@ -42,9 +42,9 @@ public class NoteMotion : MonoBehaviour
         {           
             if (gm.Hit())
             {
-                Explode2();
-                other.GetComponent<Shot>().Hide();
+                Explode2();                
             }
+            other.GetComponent<Shot>().Hide();
         } 
         else if(other.name == "PersonBounds")
         {
