@@ -7,7 +7,7 @@ public class Shot : MonoBehaviour
 {
     public GameManager gm;
     public GameObject target;
-    public static float speed = 100;
+    public static float speed = 50;
     public bool isMoving = true;
     public GameObject spawnNoteObject;
     private Vector3 startPos;
@@ -60,8 +60,14 @@ public class Shot : MonoBehaviour
         print("launch ball");
         transform.position = startPos;
         if (spawnNoteObject.transform.childCount > 0) {
-            GetComponent<Renderer>().enabled = true;            
-            StartShot(correctNode ? force : MissForce());
+            GetComponent<Renderer>().enabled = true;
+            if (correctNode)
+            {
+                StartShot(force);
+            } else
+            {
+                Hide();
+            }
         }
     }
 
