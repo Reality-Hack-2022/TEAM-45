@@ -59,15 +59,19 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppControllerVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\VirtualPointer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\ContactsExample.cs" />
+    <Compile Include="Assets\Scripts\noteTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageCaptureExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\PCFExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\MagicLeap\WebRTC\Scripts\MLWebRTCExample.cs" />
+    <Compile Include="Assets\Scripts\ScaleGlow.cs" />
+    <Compile Include="Assets\Audio\Note Hits\NoteImpactSound.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\HandVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIScrollView.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageTrackerExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\RawVideoCaptureVisualizer.cs" />
+    <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\PathAroundObject.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\PlanesExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -100,6 +104,7 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MLRaycastVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsButtonVisualizer.cs" />
+    <Compile Include="Assets\Scripts\notesoundtrigger.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ImageTrackerVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIButton.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\HandMeshingExample.cs" />
@@ -115,15 +120,18 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsListPageVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\VideoCaptureVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Scripts\Mallet.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PlaceFromCamera.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusIndicator.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\MeshingExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\NoteMotion.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MeshingVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Streaming\Common\Scripts\Utility\MediaPlayerToggle.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\RaycastExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Streaming\MediaPlayer\Scripts\MediaPlayerExampleCycler.cs" />
+    <Compile Include="Assets\Scripts\ButtonNote.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSeaExplorerLauncher.cs" />
     <Compile Include="Assets\MagicLeap\FoundObjects\Scripts\MLFoundObjectsVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -164,6 +172,7 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\LightTrackingExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Streaming\MusicService\Scripts\MusicServiceExample.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\WacomTabletFeedbackExample.cs" />
+    <Compile Include="Assets\Scripts\CreateNote.cs" />
     <Compile Include="Assets\MagicLeap\Examples\UI\Scripts\UIInputVisualizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -181,15 +190,7 @@
     <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\Contacts\ContactsVisualizer.cs" />
     <Compile Include="Assets\MagicLeap\Examples\Scripts\HandTrackingExample.cs" />
     <Compile Include="Assets\Scripts\Shot.cs" />
-    <Compile Include="Assets\Scripts\NoteMotion.cs" />
-    <Compile Include="Assets\Scripts\CreateNote.cs" />
-    <Compile Include="Assets\Scripts\ScaleGlow.cs" />
-    <Compile Include="Assets\Scripts\Mallet.cs" />
-    <Compile Include="Assets\Scripts\ButtonNote.cs" />
-    <Compile Include="Assets\Scripts\Explode.cs" />
-    <Compile Include="Assets\Audio\Note Hits\NoteImpactSound.cs" />
-    <Compile Include="Assets\Scripts\noteTrigger.cs" />
-    <Compile Include="Assets\Scripts\notesoundtrigger.cs" />
+    <Compile Include="Assets\Scripts\UpdateScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MagicLeap\Examples\Streaming\MusicService\Plugins\Lumin\music_manifest.xml" />
@@ -843,6 +844,9 @@
     <Reference Include="Unity.XR.ARSubsystems">
       <HintPath>Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
+    <Reference Include="LuminUnity">
+      <HintPath>Library\ScriptAssemblies\LuminUnity.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -867,6 +871,9 @@
     <Reference Include="UnityEditor.XR.MagicLeap">
       <HintPath>Library\ScriptAssemblies\UnityEditor.XR.MagicLeap.dll</HintPath>
     </Reference>
+    <Reference Include="LuminUnity-Editor">
+      <HintPath>Library\ScriptAssemblies\LuminUnity-Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
@@ -878,12 +885,6 @@
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="LuminUnity">
-      <HintPath>Library\ScriptAssemblies\LuminUnity.dll</HintPath>
-    </Reference>
-    <Reference Include="LuminUnity-Editor">
-      <HintPath>Library\ScriptAssemblies\LuminUnity-Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -983,6 +984,10 @@
       <Project>{20D74B44-0F0E-EFDB-A581-F422A167FB7A}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
     </ProjectReference>
+    <ProjectReference Include="MagicLeapTools.Voice.csproj">
+      <Project>{0776BAF5-CD3C-732B-1DD7-472A7AA02BF4}</Project>
+      <Name>MagicLeapTools.Voice</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Examples.csproj">
       <Project>{9944CB87-609C-379A-374B-41A0EBB318F6}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
@@ -1003,6 +1008,10 @@
       <Project>{3EA7E685-B9E7-E1E7-30E9-5D1E6DAFE99E}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.CameraSystem</Name>
     </ProjectReference>
+    <ProjectReference Include="MagicLeap.MRTK.csproj">
+      <Project>{FA344DBF-27CD-A73E-3EEF-043F7B986B8C}</Project>
+      <Name>MagicLeap.MRTK</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.csproj">
       <Project>{E692C70C-2E33-052E-B4CD-33EB7D6D8139}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor</Name>
@@ -1022,6 +1031,10 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.csproj">
       <Project>{27A21720-6E29-9B7A-12FE-80796033018A}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy</Name>
+    </ProjectReference>
+    <ProjectReference Include="MagicLeap.MRTK.Editor.csproj">
+      <Project>{E52BE53E-DFD6-4EF1-C289-BEAC81A7C22F}</Project>
+      <Name>MagicLeap.MRTK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.csproj">
       <Project>{39E236A8-DAC9-BD50-B2B2-C92AFE84FC34}</Project>
@@ -1094,18 +1107,6 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.StandardAssets.Editor.csproj">
       <Project>{DB72963E-CD29-7D46-45AA-72E7C590599B}</Project>
       <Name>Microsoft.MixedReality.Toolkit.StandardAssets.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeap.MRTK.csproj">
-      <Project>{FA344DBF-27CD-A73E-3EEF-043F7B986B8C}</Project>
-      <Name>MagicLeap.MRTK</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeap.MRTK.Editor.csproj">
-      <Project>{E52BE53E-DFD6-4EF1-C289-BEAC81A7C22F}</Project>
-      <Name>MagicLeap.MRTK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MagicLeapTools.Voice.csproj">
-      <Project>{0776BAF5-CD3C-732B-1DD7-472A7AA02BF4}</Project>
-      <Name>MagicLeapTools.Voice</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
