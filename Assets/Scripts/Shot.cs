@@ -22,19 +22,11 @@ public class Shot : MonoBehaviour
         startPos = transform.position;
     }
 
-    void Update()
-    {
-        if (isMoving)
-        {            
-            rb.AddForce(force * Time.deltaTime, ForceMode.Acceleration);
-        }
-    }
-
-    private void Enlarge(Vector3 vector)
+    private void StartShot(Vector3 vector)
     {
         transform.localScale = scale;
-        var scaleTo = scale * 15f;
-        StartCoroutine(ScaleOverSeconds(vector, scaleTo, 0.5f));
+        var scaleTo = scale * 5f;
+        StartCoroutine(ScaleOverSeconds(vector, scaleTo, 1.5f));
     }
 
     public IEnumerator ScaleOverSeconds(Vector3 vector, Vector3 scaleTo, float seconds)
@@ -48,7 +40,6 @@ public class Shot : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         transform.localScale = scaleTo;
-        isMoving = true;
         rb.velocity = vector;
     }
 
@@ -57,14 +48,13 @@ public class Shot : MonoBehaviour
         print("launch ball");
         if (spawnNoteObject.transform.childCount > 0) {
             GetComponent<Renderer>().enabled = true;
-            rb.velocity = new Vector3(0f, 0f, 0f);            
-            Enlarge(correctNode ? force : MissForce());
+            rb.velocity = new Vector3(0f, 0f, 0f);
+            StartShot(correctNode ? force : MissForce());
         }
     }
 
     public void Hide()
     {
-        isMoving = false;
         transform.position = startPos;
         GetComponent<Renderer>().enabled = false;
         Debug.Log("wow");
@@ -72,8 +62,10 @@ public class Shot : MonoBehaviour
 
     private Vector3 MissForce()
     {
-        float x = (float)Random.Range(0.1f, 0.3f);
-        float y = (float)Random.Range(0.1f, 0.3f);
+        int xSign = Random.Range(0, 1) > 0.5 ? 1 : -1;
+        int ySign = Random.Range(0, 1) > 0.5 ? 1 : -1;
+        float x = (float)Random.Range(0.2f, 0.3f) * speed * xSign;
+        float y = (float)Random.Range(0.2f, 0.3f) * speed * ySign;
         return force + new Vector3(x, y, 0);
     }
 }
