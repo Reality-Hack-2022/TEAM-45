@@ -3507,7 +3507,7 @@ MonoBehaviour:
     pitch: 1.5
     source: {fileID: 0}
   - name: Body
-    clip: {fileID: 8300000, guid: b73966f20aab049ae9e2273da323e156, type: 3}
+    clip: {fileID: 8300000, guid: 2392ef2ae94514b58b69a2018fc7c59b, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
