@@ -3501,8 +3501,13 @@ MonoBehaviour:
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
-  - name: Note_ti
+  - name: Impact_ti
     clip: {fileID: 8300000, guid: 930ee462f2ea946cdac9a330a91bf9b8, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Body
+    clip: {fileID: 8300000, guid: 2392ef2ae94514b58b69a2018fc7c59b, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
