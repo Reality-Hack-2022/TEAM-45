@@ -39,9 +39,11 @@ public class Shot : MonoBehaviour
         if (spawnNoteObject.transform.childCount > 0)
         {
             target = spawnNoteObject.transform.GetChild(0).gameObject;
+            GetComponent<Renderer>().enabled = true;
+            isMoving = true;
         }
-        GetComponent<Renderer>().enabled = true;
-        isMoving = true;
+        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,8 +54,16 @@ public class Shot : MonoBehaviour
             transform.position = startPos;
             GetComponent<Renderer>().enabled = false;
             Debug.Log("wow");
-            gm.Hit();
+            //gm.Hit();
         }
         
+    }
+
+    public void Hide()
+    {
+        isMoving = false;
+        transform.position = startPos;
+        GetComponent<Renderer>().enabled = false;
+        Debug.Log("wow");
     }
 }
