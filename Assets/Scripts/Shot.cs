@@ -32,16 +32,17 @@ public class Shot : MonoBehaviour
         }
     }*/
 
-    private void StartShot(Vector3 vector)
+    private void StartShot(bool correctNote)
     {
         rb.velocity = new Vector3(0f, 0f, 0f);
-        gameObject.transform.localScale = scale;
+        transform.localScale = scale;
         var scaleTo = scale * 5f;
-        StartCoroutine(ScaleOverSeconds(gameObject, vector, scaleTo, 1.5f));
+        StartCoroutine(ScaleOverSeconds(gameObject, correctNote, scaleTo, 1.5f));
     }
 
-    public IEnumerator ScaleOverSeconds(GameObject o, Vector3 vector, Vector3 scaleTo, float seconds)
+    public IEnumerator ScaleOverSeconds(GameObject o, bool correctNote, Vector3 scaleTo, float seconds)
     {
+        print("ScaleOverSeconds");
         float elapsedTime = 0;
         Vector3 startingScale = o.transform.localScale;
         while (elapsedTime < seconds)
@@ -51,8 +52,16 @@ public class Shot : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         o.transform.localScale = scaleTo;
-        print("velocity++++");
-        rb.velocity = vector;   
+        print("after");
+        if (correctNote)
+        {
+            print("velocity++++");
+            rb.velocity = force;
+        } else
+        {
+            print("Hideing");
+            Hide();
+        }
     }
 
     public void LaunchBall(bool correctNode)
@@ -61,18 +70,13 @@ public class Shot : MonoBehaviour
         transform.position = startPos;
         if (spawnNoteObject.transform.childCount > 0) {
             GetComponent<Renderer>().enabled = true;
-            if (correctNode)
-            {
-                StartShot(force);
-            } else
-            {
-                Hide();
-            }
+            StartShot(correctNode);
         }
     }
 
     public void Hide()
     {
+        print("Hide");
         transform.position = startPos;
         GetComponent<Renderer>().enabled = false;
         Debug.Log("wow");

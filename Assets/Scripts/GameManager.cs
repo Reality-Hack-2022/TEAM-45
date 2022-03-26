@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private int scoresInARow = 0;
 
     
-    private float period = 7f;
+    private float period = 10f;
     private float nextActionTime = 0f;
 
     void Start()
