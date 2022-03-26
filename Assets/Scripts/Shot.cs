@@ -75,8 +75,8 @@ public class Shot : MonoBehaviour
     private Vector3 MissForce()
     {
         double angle = UnityEngine.Random.Range(0, (float) Math.PI);
-        float x = (float) Math.Cos(angle) * speed;
-        float y = (float) Math.Sin(angle) * speed;
+        float x = (float) Math.Cos(angle) * speed / 10;
+        float y = (float) Math.Sin(angle) * speed / 10;
         return force + new Vector3(x, y, 0);
     }
 }
