@@ -12,15 +12,6 @@ public class NoteMotion : MonoBehaviour
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       /* if (transform.position.z < 50)
-        {
-            Explode2();
-        }*/
-    }
-
     void Explode()
     {
         ParticleSystem exp = GetComponent<ParticleSystem>();
