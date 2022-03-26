@@ -9,12 +9,15 @@ public class ButtonNote : MonoBehaviour
     public bool isMoving = true;
     private Vector3 startPos;
     public GameObject shot;
+    public Material glowMaterial;
+    private Material currMaterial;
 
     // Start is called before the first frame update
     void Start()
     {
         shot = GameObject.Find("shot");
         startPos = transform.position;
+        currMaterial = transform.GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -31,9 +34,11 @@ public class ButtonNote : MonoBehaviour
     {
         if(other.name == "Mallet")
         {
+
             isMoving = true;
             other.gameObject.GetComponent<Collider>().enabled = false;
             shot.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
+            StartCoroutine(Glow());
         }
     }
 
@@ -43,5 +48,12 @@ public class ButtonNote : MonoBehaviour
         transform.position = startPos;
         GetComponent<Renderer>().enabled = true;
 
+    }
+
+    IEnumerator Glow()
+    {
+        gameObject.GetComponent<Renderer>().material = glowMaterial;
+        yield return new WaitForSeconds(.5f);
+        gameObject.GetComponent<Renderer>().material = currMaterial;
     }
 }

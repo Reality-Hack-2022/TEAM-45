@@ -6,6 +6,11 @@ public class Ring : MonoBehaviour
 {
     public GameManager gm;
     public Shot shot;
+
+    public GameObject hoop;
+    public Material currMaterial;
+    public Material glowMaterial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,14 @@ public class Ring : MonoBehaviour
             other.GetComponent<Renderer>().enabled = false;
             other.gameObject.GetComponent<ButtonNote>().Reset();
             shot.LaunchBall(gm.IsNoteCorrect());
+            StartCoroutine(Glow());
         }
+    }
+
+    IEnumerator Glow()
+    {
+        hoop.GetComponent<Renderer>().material = glowMaterial;
+        yield return new WaitForSeconds(.5f);
+        hoop.GetComponent<Renderer>().material = currMaterial;
     }
 }
