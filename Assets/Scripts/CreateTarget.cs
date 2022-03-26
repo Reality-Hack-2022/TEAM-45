@@ -14,6 +14,6 @@ public class CreateTarget : MonoBehaviour
     }
     
     public void PlaySound(string noteName) {
-        FindComponent<AudioManager>().Play("Target_" + noteName);
+        FindObjectOfType<Audiomanager>().Play("Target_" + noteName);
     }
 }

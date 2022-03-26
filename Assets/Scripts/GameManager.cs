@@ -90,10 +90,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void FireTarget()
+    private void FireTarget(string noteName)
     {
         Rigidbody newBody = Instantiate(targetFab, new Vector3(0f, 25f, 120f), Quaternion.identity);
         newBody.transform.parent = gameObject.transform;
         newBody.velocity = new Vector3(0f, -0.2f, -1f) * 20f;
+    }
+
+    private void PlaySound(string noteName)
+    {
+        FindObjectOfType<Audiomanager>().Play("Target_" + noteName);
     }
 }
