@@ -8,10 +8,12 @@ public class ButtonNote : MonoBehaviour
     public float speed = 1;
     public bool isMoving = true;
     private Vector3 startPos;
+    public GameObject shot;
 
     // Start is called before the first frame update
     void Start()
     {
+        shot = GameObject.Find("shot");
         startPos = transform.position;
     }
 
@@ -31,6 +33,7 @@ public class ButtonNote : MonoBehaviour
         {
             isMoving = true;
             other.gameObject.GetComponent<Collider>().enabled = false;
+            shot.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
         }
     }
 
