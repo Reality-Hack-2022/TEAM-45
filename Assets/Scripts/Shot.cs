@@ -60,6 +60,7 @@ public class Shot : MonoBehaviour
         } else
         {
             print("Hideing");
+            FindObjectOfType<Audiomanager>().Play("pop");
             Hide();
         }
     }
