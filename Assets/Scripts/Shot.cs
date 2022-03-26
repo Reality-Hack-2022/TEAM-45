@@ -33,8 +33,8 @@ public class Shot : MonoBehaviour
 
     private void Enlarge()
     {
-        var scaleTo = scale * 5f;
-        StartCoroutine(ScaleOverSeconds(gameObject, scaleTo, 1.0f));
+        var scaleTo = scale * 15f;
+        StartCoroutine(ScaleOverSeconds(gameObject, scaleTo, 0.5f));
     }
 
     public IEnumerator ScaleOverSeconds(GameObject objectToScale, Vector3 scaleTo, float seconds)
