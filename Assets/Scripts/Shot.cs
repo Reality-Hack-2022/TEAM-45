@@ -20,7 +20,6 @@ public class Shot : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         startPos = transform.position;
-        LaunchBall();
     }
 
     void Update()
@@ -31,36 +30,35 @@ public class Shot : MonoBehaviour
         }
     }
 
-    private void Enlarge()
+    private void Enlarge(Vector3 vector)
     {
         transform.localScale = scale;
         var scaleTo = scale * 15f;
-        StartCoroutine(ScaleOverSeconds(gameObject, scaleTo, 0.5f));
+        StartCoroutine(ScaleOverSeconds(vector, scaleTo, 0.5f));
     }
 
-    public IEnumerator ScaleOverSeconds(GameObject objectToScale, Vector3 scaleTo, float seconds)
+    public IEnumerator ScaleOverSeconds(Vector3 vector, Vector3 scaleTo, float seconds)
     {
         float elapsedTime = 0;
-        Vector3 startingScale = objectToScale.transform.localScale;
+        Vector3 startingScale = transform.localScale;
         while (elapsedTime < seconds)
         {
-            objectToScale.transform.localScale = Vector3.Lerp(startingScale, scaleTo, (elapsedTime / seconds));
+            transform.localScale = Vector3.Lerp(startingScale, scaleTo, (elapsedTime / seconds));
             elapsedTime += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-        objectToScale.transform.localScale = scaleTo;
+        transform.localScale = scaleTo;
         isMoving = true;
-        rb.velocity = force;
+        rb.velocity = vector;
     }
 
-    public void LaunchBall()
+    public void LaunchBall(bool correctNode)
     {
         print("launch ball");
-        if (spawnNoteObject.transform.childCount > 0)
-        {
+        if (spawnNoteObject.transform.childCount > 0) {
             GetComponent<Renderer>().enabled = true;
             rb.velocity = new Vector3(0f, 0f, 0f);            
-            Enlarge();
+            Enlarge(correctNode ? force : MissForce());
         }
     }
 
@@ -70,5 +68,12 @@ public class Shot : MonoBehaviour
         transform.position = startPos;
         GetComponent<Renderer>().enabled = false;
         Debug.Log("wow");
+    }
+
+    private Vector3 MissForce()
+    {
+        float x = (float)Random.Range(0.1f, 0.3f);
+        float y = (float)Random.Range(0.1f, 0.3f);
+        return force + new Vector3(x, y, 0);
     }
 }

@@ -102,4 +102,9 @@ public class GameManager : MonoBehaviour
     {
         FindObjectOfType<Audiomanager>().Play("Target_" + noteName);
     }
+
+    public bool IsNoteCorrect()
+    {
+        return currNote == selectedNote;
+    }
 }

@@ -25,7 +25,7 @@ public class Ring : MonoBehaviour
             gm.selectedNote = other.name;
             other.GetComponent<Renderer>().enabled = false;
             other.gameObject.GetComponent<ButtonNote>().Reset();
-            shot.LaunchBall();
+            shot.LaunchBall(gm.IsNoteCorrect());
         }
     }
 }
