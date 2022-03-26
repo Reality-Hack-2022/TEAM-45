@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         {
 
             nextActionTime = Time.time + period;
-            Debug.Log("time " + Time.time);
+            //Debug.Log("time " + Time.time);
             LaunchTarget();
         }
 
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void LaunchTarget()
     {
+        Mallet.GetComponent<Collider>().enabled = true;
         currTry = 0;
         currNote = notes[(int) Random.Range(0, notes.Length)];
         Debug.Log(currNote);
@@ -73,11 +74,12 @@ public class GameManager : MonoBehaviour
     public void OnBodyCollision()
     {
         score--;
+        Reset();
     }
 
     private void Reset()
     {
-        Mallet.GetComponent<Collider>().enabled = true;
+        //Mallet.GetComponent<Collider>().enabled = true;
         foreach(Transform t in NotesContainer.transform)
         {
             t.GetComponent<Renderer>().enabled = true;
