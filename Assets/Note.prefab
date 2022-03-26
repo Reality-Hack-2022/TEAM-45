@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -7228012710838003195}
   m_Layer: 0
   m_Name: Note
-  m_TagString: Untagged
+  m_TagString: target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 6919858063559664406, guid: f500e85bbbb2d9149b38134eeb5021a3, type: 3}
+  gm: {fileID: 0}
 --- !u!108 &2909785623885233533
 Light:
   m_ObjectHideFlags: 0

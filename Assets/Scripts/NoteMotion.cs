@@ -5,10 +5,11 @@ using UnityEngine;
 public class NoteMotion : MonoBehaviour
 {
     public ParticleSystem explosion;
+    public GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class NoteMotion : MonoBehaviour
 
     public void Explode2()
     {
+        
         ParticleSystem exp = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
         Destroy(exp, exp.main.duration);
@@ -40,10 +42,13 @@ public class NoteMotion : MonoBehaviour
         {
             Debug.Log("An object entered.");
             Explode2();
-        } else
+        } 
+        else if(other.name == "PersonBounds")
         {
+            Debug.Log("huh");
             Destroy(gameObject);
         }
+        //
     }
 
     void OnCollisionEnter(Collision collision)
