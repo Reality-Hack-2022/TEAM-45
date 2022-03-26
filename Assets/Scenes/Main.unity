@@ -2876,6 +2876,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 339044867}
   shot: {fileID: 967391228}
+  hoop: {fileID: 6917409845727251596}
+  currMaterial: {fileID: 2100000, guid: 335dd55a5297d4e9eb06059435f36596, type: 2}
+  glowMaterial: {fileID: 2100000, guid: c243ccddd7a46494f87aa65475f13bd9, type: 2}
 --- !u!1 &1584353643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,7 +4405,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5434048440725357954, guid: 3ff90dbbc704b564e99d1752a3f79343, type: 3}
+  - {fileID: 2100000, guid: 335dd55a5297d4e9eb06059435f36596, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
