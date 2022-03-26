@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 5;
+        
     }
 
     void Update()
@@ -95,11 +96,7 @@ public class GameManager : MonoBehaviour
         Rigidbody newBody = Instantiate(targetFab, new Vector3(0f, 25f, 120f), Quaternion.identity);
         newBody.transform.parent = gameObject.transform;
         newBody.velocity = new Vector3(0f, -0.2f, -1f) * 20f;
-        PlaySound(noteName);
-    }
-
-    private void PlaySound(string noteName)
-    {
+        
         FindObjectOfType<Audiomanager>().Play("Target_" + noteName);
     }
 
