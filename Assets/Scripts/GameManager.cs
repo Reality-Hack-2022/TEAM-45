@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int score = 0;
-    private string[] notes = {"do", "re", "mi", "fa", "so", "la", "ti"};
+    private string[] notes = {"do", "re", "mi", "fa", "sol", "la", "ti"};
     private string currNote = "do";
     public string selectedNote = "";
     public GameObject NotesContainer;
