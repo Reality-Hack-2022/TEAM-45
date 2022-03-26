@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         score--;
         Reset();
-        FindObjectOfType<Audiomanager>().Play("Body_" + currNote);
+        FindObjectOfType<Audiomanager>().Play("Body");
     }
 
     private void Reset()
