@@ -7,7 +7,7 @@ public class Shot : MonoBehaviour
 {
     public GameManager gm;
     public GameObject target;
-    public static float speed = 25;
+    public static float speed = 50;
     public bool isMoving = true;
     public GameObject spawnNoteObject;
     private Vector3 startPos;
