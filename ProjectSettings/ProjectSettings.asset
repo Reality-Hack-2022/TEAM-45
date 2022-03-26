@@ -696,7 +696,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: /Users/marshallchadbourne/Desktop/Production/MIT_Hackathon_2022/MagicLeap-Developer-Certificate/mit-reality-hack.cert
+    m_CertPath: C:/Users/user/Documents/Developer Certificate/privatekey/hackathon.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
