@@ -3511,6 +3511,11 @@ MonoBehaviour:
     volume: 1
     loop: 0
     source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: c177d7577959041b8a127fe7c1c07536, type: 3}
+    volume: 0.436
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1977748083
 Transform:
   m_ObjectHideFlags: 0
