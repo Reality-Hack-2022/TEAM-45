@@ -5080,6 +5080,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsula
       objectReference: {fileID: 0}
+    - target: {fileID: 5893654086011372764, guid: 91f34b59aa70b7745b21236a071f4fd5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893654086011372764, guid: 91f34b59aa70b7745b21236a071f4fd5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ab1ecbc2d14717ae859607d15c4bfe, type: 2}
+    - target: {fileID: 5893654086011372764, guid: 91f34b59aa70b7745b21236a071f4fd5, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 5423880152829725792, guid: 47e49e8147cdb984e9ce6e1e2eeeab30, type: 3}
     - target: {fileID: 8584877854992589274, guid: 91f34b59aa70b7745b21236a071f4fd5, type: 3}
       propertyPath: m_RootOrder
       value: 0
