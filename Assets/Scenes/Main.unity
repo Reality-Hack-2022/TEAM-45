@@ -915,7 +915,7 @@ MonoBehaviour:
   selectedNote: 
   NotesContainer: {fileID: 287424215}
   Mallet: {fileID: 7036943379226789280}
-  targetFab: {fileID: 0}
+  targetFab: {fileID: 1129085764070728144, guid: 453f041aabba1a640a40c5cc1f39dcf0, type: 3}
 --- !u!4 &339044868
 Transform:
   m_ObjectHideFlags: 0
