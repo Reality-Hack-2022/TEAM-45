@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public string selectedNote = "";
     public GameObject NotesContainer;
     public GameObject Mallet;
-    public CreateNote createTargetScript;
+    public CreateTarget createTargetScript;
 
     private int numOfTries = 2;
     private int currTry = 0;
