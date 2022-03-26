@@ -3531,7 +3531,7 @@ MonoBehaviour:
   - name: pop
     clip: {fileID: 8300000, guid: 9cd39d6bc6c7846789abee4c1d9b7b68, type: 3}
     volume: 0.436
-    loop: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &1977748083
 Transform:
