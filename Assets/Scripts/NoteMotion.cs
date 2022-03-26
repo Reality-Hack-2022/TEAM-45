@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class NoteMotion : MonoBehaviour
 {
     public ParticleSystem explosion;
     public GameManager gm;
