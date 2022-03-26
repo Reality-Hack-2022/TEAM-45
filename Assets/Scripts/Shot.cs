@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Shot : MonoBehaviour
 {
@@ -20,35 +21,46 @@ public class Shot : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         startPos = transform.position;
+       /* LaunchBall(true);*/
     }
+
+/*    void Update()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            LaunchBall(false);
+        }
+    }*/
 
     private void StartShot(Vector3 vector)
     {
-        transform.localScale = scale;
+        rb.velocity = new Vector3(0f, 0f, 0f);
+        gameObject.transform.localScale = scale;
         var scaleTo = scale * 5f;
-        StartCoroutine(ScaleOverSeconds(vector, scaleTo, 1.5f));
+        StartCoroutine(ScaleOverSeconds(gameObject, vector, scaleTo, 1.5f));
     }
 
-    public IEnumerator ScaleOverSeconds(Vector3 vector, Vector3 scaleTo, float seconds)
+    public IEnumerator ScaleOverSeconds(GameObject o, Vector3 vector, Vector3 scaleTo, float seconds)
     {
         float elapsedTime = 0;
-        Vector3 startingScale = transform.localScale;
+        Vector3 startingScale = o.transform.localScale;
         while (elapsedTime < seconds)
         {
-            transform.localScale = Vector3.Lerp(startingScale, scaleTo, (elapsedTime / seconds));
+            o.transform.localScale = Vector3.Lerp(startingScale, scaleTo, (elapsedTime / seconds));
             elapsedTime += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-        transform.localScale = scaleTo;
-        rb.velocity = vector;
+        o.transform.localScale = scaleTo;
+        print("velocity++++");
+        rb.velocity = vector;   
     }
 
     public void LaunchBall(bool correctNode)
     {
         print("launch ball");
+        transform.position = startPos;
         if (spawnNoteObject.transform.childCount > 0) {
-            GetComponent<Renderer>().enabled = true;
-            rb.velocity = new Vector3(0f, 0f, 0f);
+            GetComponent<Renderer>().enabled = true;            
             StartShot(correctNode ? force : MissForce());
         }
     }
@@ -62,10 +74,9 @@ public class Shot : MonoBehaviour
 
     private Vector3 MissForce()
     {
-        int xSign = Random.Range(0, 1) > 0.5 ? 1 : -1;
-        int ySign = Random.Range(0, 1) > 0.5 ? 1 : -1;
-        float x = (float)Random.Range(0.2f, 0.3f) * speed * xSign;
-        float y = (float)Random.Range(0.2f, 0.3f) * speed * ySign;
+        double angle = UnityEngine.Random.Range(0, (float) Math.PI);
+        float x = (float) Math.Cos(angle) * speed;
+        float y = (float) Math.Sin(angle) * speed;
         return force + new Vector3(x, y, 0);
     }
 }
