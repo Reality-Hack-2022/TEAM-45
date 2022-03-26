@@ -34,6 +34,7 @@ public class ButtonNote : MonoBehaviour
     {
         if(other.name == "Mallet")
         {
+
             isMoving = true;
             other.gameObject.GetComponent<Collider>().enabled = false;
             shot.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
