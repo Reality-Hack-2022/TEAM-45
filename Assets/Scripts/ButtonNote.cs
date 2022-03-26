@@ -11,6 +11,7 @@ public class ButtonNote : MonoBehaviour
     public GameObject shot;
     public Material glowMaterial;
     private Material currMaterial;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class ButtonNote : MonoBehaviour
         shot = GameObject.Find("shot");
         startPos = transform.position;
         currMaterial = transform.GetComponent<Renderer>().material;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class ButtonNote : MonoBehaviour
             other.gameObject.GetComponent<Collider>().enabled = false;
             shot.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
             StartCoroutine(Glow());
+            audioSource.PlayOneShot(audioSource.clip, .5f);
         }
     }
 
