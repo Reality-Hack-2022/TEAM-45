@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
                 score += scoresInARow - 2;
             }
             res = true;
+            FindObjectOfType<Audiomanager>().Play("Impact_" + currNote);
         }
         else
         {
@@ -80,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         score--;
         Reset();
+        FindObjectOfType<Audiomanager>().Play("Body_" + currNote);
     }
 
     private void Reset()
