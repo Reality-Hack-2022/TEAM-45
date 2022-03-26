@@ -67,6 +67,11 @@ public class GameManager : MonoBehaviour
         Reset();
     }
 
+    public void OnBodyCollision()
+    {
+        score--;
+    }
+
     private void Reset()
     {
         Mallet.GetComponent<Collider>().enabled = true;

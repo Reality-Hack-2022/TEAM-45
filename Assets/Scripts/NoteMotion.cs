@@ -47,6 +47,7 @@ public class NoteMotion : MonoBehaviour
         {
             Debug.Log("huh");
             Destroy(gameObject);
+            gm.OnBodyCollision();
         }
         //
     }
